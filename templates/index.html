@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>Webapp</title>
+
+    {% include 'stylesheets.html' %}
+
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 ng-view"></div>
+        </div>
+    </div>
+
+    {% include 'javascripts.html' %}
+</body>
+</html>

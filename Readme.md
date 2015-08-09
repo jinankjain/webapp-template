@@ -7,8 +7,9 @@ Setup local system by following the link at https://devcenter.heroku.com/article
 
 + virtualvenv
 + heroku toolbelt: pip install django-toolbelt
-+ specify dependecies with Pip: pip freeze > requirements.txt
-
++ $pip install -r requirements.txt : to install python packages
++ $npm install : to install node dependencies > bower and gulp.js
++ python manage.py migrate: to create basic tables for the django dependencies
 ### Once in your machine
 
 + Setup an environment variable DATABASE_URL : export DATABASE_URL=postgres:///$(whoami)
