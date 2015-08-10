@@ -5,10 +5,6 @@ npm install
 
 python manage.py migrate
 
-git init
-git add .
-git commit -m "initial commit"
-
 heroku login
 heroku create
 heroku ps:scale web=1
