@@ -1,22 +1,23 @@
-# Webapp template: backend: Django frontend: AngularJS
-## Builtin custom Auth module, deployment on heroku
+# Webapp template - Django with AngularJS
+## Boilerplace code to get you running on Heroku in minutes
 
-## Setting up heroku with django
-Setup local system by following the link at https://devcenter.heroku.com/articles/getting-started-with-python#introduction
+## Pre-requisites
+- Python
+- Node
+- postgresql
+- heroku toolbelt installed
+- Setup an environment variable DATABASE_URL : export DATABASE_URL=postgres:///$(whoami)
 
-###Things to be setup everytime are:
+## Pre-setup steps
+- [Optional][Recommended] Make sure you have virtualenv setup to avoid python package conflicts
 
-+ virtualvenv
-+ heroku toolbelt: pip install django-toolbelt
-+ $pip install -r requirements.txt : to install python packages
-+ $npm install : to install node dependencies > bower and gulp.js
-+ python manage.py migrate: to create basic tables for the django dependencies
-+ heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git : to support multiple buildpacks, as we use both python and node
+## Setup sets
+- `$git clone https://github.com/shashank-iitj/webapp-template.git`
+- `$cd webapp-template`
+- `$chmod +x setupWebapp.sh`
+- `$./setupWebapp.sh`
 
-### Once in your machine
-
-+ Setup an environment variable DATABASE_URL : export DATABASE_URL=postgres:///$(whoami)
-
+## Notes for geeks
 ###Setups already handled by template:
 #### Heroku Specific
 - Procfile
@@ -33,21 +34,9 @@ web: gunicorn webapp.wsgi --log-file -
 - bower installations
 - gulp.js build to automate tasks like js minification etc.
 
-## Heroku app creation and git
-- $git init
-- $git add .
-- $git commit -m "initial commit"
-- $heroku create
-- $heroku ps:scale web=1 : To ensure atleast one dyno is running
-
-### Now open the webapp in Pycharm/Sublime/your favorite editor
-
-## Miscellaneous
-- $heroku run python manage.py syncdb : To run a command on heroku dyno
-- $heroku run python manage.py shell : Django shell for executing arbitrary code against your deployed app
-
 ## References:
-https://devcenter.heroku.com/articles/getting-started-with-django
+- https://devcenter.heroku.com/articles/getting-started-with-python
+- https://devcenter.heroku.com/articles/getting-started-with-django
 
 
 
