@@ -10,6 +10,7 @@ Setup local system by following the link at https://devcenter.heroku.com/article
 + $pip install -r requirements.txt : to install python packages
 + $npm install : to install node dependencies > bower and gulp.js
 + python manage.py migrate: to create basic tables for the django dependencies
++ heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git : to support multiple buildpacks, as we use both python and node
 ### Once in your machine
 
 + Setup an environment variable DATABASE_URL : export DATABASE_URL=postgres:///$(whoami)
