@@ -6,7 +6,7 @@
 - Node
 - postgresql
 - heroku toolbelt installed
-- Setup an environment variable DATABASE_URL : export DATABASE_URL=postgres:///$(whoami)
+- Setup an environment variable: DATABASE_URL=postgres:///$(whoami)
 
 ## Pre-setup steps
 - [Optional][Recommended] Make sure you have virtualenv setup to avoid python package conflicts
