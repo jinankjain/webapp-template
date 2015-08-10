@@ -1,6 +1,10 @@
 # Webapp template - Django with AngularJS
 ## Boilerplace code to get you running on Heroku in minutes
 
+
+![](https://dl.dropboxusercontent.com/u/8717749/herokuWebapp.png)
+
+
 ## Pre-requisites
 - Python
 - Node
