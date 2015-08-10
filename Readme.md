@@ -37,6 +37,7 @@ web: gunicorn webapp.wsgi --log-file -
 ## References:
 - https://devcenter.heroku.com/articles/getting-started-with-python
 - https://devcenter.heroku.com/articles/getting-started-with-django
+- https://thinkster.io/django-angularjs-tutorial/
 
 
 
