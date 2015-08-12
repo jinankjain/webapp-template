@@ -12,5 +12,6 @@ heroku buildpacks:set https://github.com/ddollar/heroku-buildpack-multi.git
 
 git push heroku master
 heroku ps:scale web=1
+heroku run python manage.py syncdb
 
 heroku open
